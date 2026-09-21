@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NumberScope — Live Number Metadata</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="brand"><b>N</b> NumberScope</div><span>LIVE METADATA</span></header>
+<main>
+<section class="hero">
+<div class="eyebrow">PHONE INTELLIGENCE</div>
+<h1>Know the number.<br><em>Not the person.</em></h1>
+<p>Real-time number validation and public metadata lookup powered by NumVerify.</p>
+<div class="search">
+<input id="phone" placeholder="+91 98765 43210" inputmode="tel">
+<button id="lookup">Lookup →</button>
+</div>
+<small>Use international format. Example: +919876543210</small>
+<div id="error"></div>
+</section>
+
+<section id="panel" class="panel hidden">
+<div class="panel-head"><div><div class="eyebrow">RESULT</div><h2>Number profile</h2></div><div id="badge">LIVE</div></div>
+<div class="cards">
+<div class="card wide"><label>INTERNATIONAL NUMBER</label><strong id="international">—</strong><p id="valid">—</p></div>
+<div class="card"><label>COUNTRY</label><strong id="country">—</strong><p id="countryCode">—</p></div>
+<div class="card"><label>REGISTERED LOCATION</label><strong id="location">—</strong><p>Number-associated metadata</p></div>
+<div class="card"><label>CARRIER</label><strong id="carrier">—</strong><p>Network information</p></div>
+<div class="card"><label>LINE TYPE</label><strong id="lineType">—</strong><p>Mobile / landline / VoIP</p></div>
+</div>
+<div class="safety"><b>ⓘ Location note</b><br>The API location is a geographical identifier associated with the number. It is <strong>not live GPS location</strong> and cannot track a person's current position.</div>
+</section>
+</main>
+<footer>NumberScope · Privacy-first number metadata</footer>
+<script src="script.js"></script>
+</body></html>
