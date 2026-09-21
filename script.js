@@ -4,7 +4,7 @@
   This direct-client demo is suitable for testing only. For production,
   proxy the request through a serverless/backend endpoint.
 */
-const API_KEY = "PASTE_YOUR_NUMVERIFY_API_KEY_HERE";
+const API_KEY = "a4fdeeb19790d2da4b6302bc404e0b9b";
 const input = document.querySelector("#phone");
 const button = document.querySelector("#lookup");
 const error = document.querySelector("#error");
